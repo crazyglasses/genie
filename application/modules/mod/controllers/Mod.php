@@ -49,6 +49,19 @@ class Mod extends MX_Controller
   $pass['status'] =$this->mod_model->getstatus();
   $this->_render_page('alltickets',$pass);
  }
+ function update($id){
+    $pass['message'] = $this->input->post('message_'.$id);
+    $pass['status'] = $this->input->post('status_'.$id);
+    $pass['mod_priority'] = $this->input->post('pri_'.$id);
+    $pass['iid'] = $id;
+    $this->mod_model->update_ticket($pass);
+    print_r("Updated");
+    redirect('/mod/tickets');
+    
+
+ }
+ 
+
 
 
 }

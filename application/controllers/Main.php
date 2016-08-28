@@ -88,5 +88,9 @@ class Main extends MX_Controller
 		$pass['data'] = $this->main_model->mytickets($id);
 		$this->_render_page('mytickets',$pass);
 	}
+	function plusone($id,$i){
+		$this->main_model->plusone($id,$i);
+		redirect('main/ticket/'.$id);
+	}
 	
 }

@@ -31,16 +31,20 @@
                                         <li><span class="font600">Time of Issue:</span> <br><br><span class="info label label-info"><?php echo $data[0]['time'];?></span>
                                         </li>
                                         <li><span class="font600">Likes:</span> <span class="info label label-info">
-                                            <?php echo $data[0]['likes'];?></span>
+                                            <?php echo $data[0]['likes'];?></span></br></br><a href="<?php echo base_url('/main/plusone/'.$data[0]['iid'].'/1');?>"><button class="btn btn-outline-info">Like +1</button></a>
                                         </li>
                                         <li><span class="font600">Support :</span> <span class="info label label-info">
-                                            <?php echo $data[0]['support'];?></span>
+                                            <?php echo $data[0]['support'];?></span></br></br><a href="<?php echo base_url('/main/plusone/'.$data[0]['iid'].'/2');?>"><button class="btn btn-outline-info" >Support +1</button></a>
+                                        </li>
+                                        <li><span class="font600">Status :</span> <span class="info label label-info">
+                                            <?php echo $data[0]['status'];?></span>
                                         </li>
                                         <li><span class="font600">Expected Date of Completion:</span> <br><br><span class="info label label-info">
                                             <?php echo $data[0]['edc'];?></span>
                                         </li>
-                                        <li><span class="font600">Assigned to: </span> <span class="info label label-info">
-                                            <?php echo $data[0]['assignee'];?></span>
+                                        <li><span class="font600">Message: </span> 
+
+                                            <?php echo $data[0]['message'];?></span>
                                         </li>
                                     </ul>
                                 </div>

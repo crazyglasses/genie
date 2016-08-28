@@ -35,4 +35,13 @@ class Main_model extends CI_Model
         $data = $this->db->get_where('ticket',array('uid'=>$id))->result_array();
         return $data;
     }
+    function plusone($id,$i){
+        $data = $this->db->get_where('ticket',array('iid'=>$id))->result_array();
+        if($i==1)
+        $data1['likes'] = ($data[0]['likes']) + 1;
+        else{
+        $data1['support'] = ($data[0]['support']) + 1;
+        }
+        $this->db->where('iid',$id)->update('ticket',$data1);
+    }
 }

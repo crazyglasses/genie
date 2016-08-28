@@ -24,4 +24,9 @@ class Mod_model extends CI_Model
         $data = $this->db->get('issues')->result_array();
         return $data;
     }
+    function update_ticket($data){
+        
+        $this->db->where('iid',$data['iid'])->update('ticket',$data);
+
+    }
 }
