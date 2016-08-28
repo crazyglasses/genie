@@ -23,7 +23,7 @@
         </div>
 
         <div class="main-search-holder">
-            <form id="filter_form" action="<?php echo base_url('/main/filter');?>" method="post">
+            <form id="filter_form" action="<?php echo base_url('/main/postticket');?>" method="post">
                 <div class="container" align="center">
 
                     <div class="row">
@@ -56,7 +56,7 @@
 
                                 <div class="form-group">
 
-                                    <select name="monthyear" id="monthyear" class="select2-multi form-control" data-placeholder="Choose a Category" required>
+                                    <select name="tags" id="tags" class="select2-multi form-control" data-placeholder="Choose a Category" required>
                                         <option value=""></option>
                                         <option value="Mess">Mess</option>
                                         <option value="Hostel">Hostel</option>

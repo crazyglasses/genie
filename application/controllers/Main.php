@@ -62,5 +62,31 @@ class Main extends MX_Controller
 		}
 		$this->ticket($id);
 	}
+	function postticket()
+	{
+		if($this->input->post('issue')&&$this->input->post('tags'))
+		{
+			$data['des'] = $this->input->post('issue');
+			$data['tags'] = $this->input->post('tags');
+			$data['uid'] = $this->ion_auth->get_user_id();
+			if($this->main_model->postticket($data)){
+				redirect('/','refresh');
+				print_r("Ticket recorded. Go to my issues to view/modify/edit");
+
+			}
+			else{
+				redirect('/','refresh');
+				print_r("Unable to post ticket.Try again");
+
+			}
+		}
+		$this->index();
+	}
+	function mytickets()
+	{
+		$id = $this->ion_auth->get_user_id();
+		$pass['data'] = $this->main_model->mytickets($id);
+		$this->_render_page('mytickets',$pass);
+	}
 	
 }

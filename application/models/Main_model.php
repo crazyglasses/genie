@@ -25,5 +25,14 @@ class Main_model extends CI_Model
     function addcomment($data){
         $this->db->insert('comments',$data);
     }
+    function postticket($data){
+        if($this->db->insert('ticket',$data))
+            return 1;
+        else return 0;
+    }
+    function mytickets($id)
+    {
+        $data = $this->db->get_where('ticket',array('uid'=>$id))->result_array();
+        return $data;
+    }
 }
-

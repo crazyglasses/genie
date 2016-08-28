@@ -248,12 +248,12 @@
 
                                     <div class="navbar-mini">
                                         <ul class="nav navbar-nav" id="responsive-menu">
-                                            <li><a href="">Home</a>
+                                            <li><a href="<?php echo base_url('/main');?>">Home</a>
                                             </li>
-                                            <li><a href="">Raise a Ticket</a>
+                                            <li><a href="<?php echo base_url('/main');?>">Raise a Ticket</a>
 
                                             </li>
-                                            <li><a href="about.html">My Issues</a></li>
+                                            <li><a href="<?php echo base_url('/main/mytickets');?>">My Issues</a></li>
                                             <li><a href="blog.html">My Profile</a>
                                                 <ul>
                                                     <li><a href="blog.html">Blog</a></li>

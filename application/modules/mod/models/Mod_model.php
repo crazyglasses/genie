@@ -19,5 +19,9 @@ class Mod_model extends CI_Model
     	$data = $this->db->get_where('mod',array('mid'=>$id))->result_array();
     	return $data;
     }
-
+    function getstatus()
+    {
+        $data = $this->db->get('issues')->result_array();
+        return $data;
+    }
 }

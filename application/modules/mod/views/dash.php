@@ -259,6 +259,8 @@ desired effect
         <li class="header">Oparations</li>
         <!-- Optionally, you can add icons to the links -->
         <li><a href="<?php echo base_url('/mod/tickets');?>"><i class="fa fa-link"></i> <span>All Tickets</span></a></li>
+        <li><a href="<?php echo base_url('/mod/tickets/1');?>"><i class="fa fa-link"></i> <span>Unattended Tickets</span></a></li>
+
        <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
             <span class="pull-right-container">

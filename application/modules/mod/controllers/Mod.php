@@ -26,7 +26,7 @@ class Mod extends MX_Controller
  {
  	$this->_render_page('sample');
  }
- function tickets()
+ function tickets($flag=0)
  {
   $pass['data'] = $this->mod_model->getalltickets();
   $tag = $this->info[0]['tags'];
@@ -36,11 +36,19 @@ class Mod extends MX_Controller
     $is_present = array_search($tag,$tags);
 
     if($is_present>-1){
+      if($flag==0){
       $arrayobj->append($row);
+    }else{
+      if($row['status']==0){
+        $arrayobj->append($row);
+      }
+    }
     }
   }
   $pass['data'] = $arrayobj;
+  $pass['status'] =$this->mod_model->getstatus();
   $this->_render_page('alltickets',$pass);
  }
+
 
 }
