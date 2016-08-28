@@ -42,7 +42,7 @@
 
     <!-- CSS Custom -->
     <link href="<?php echo base_url('/assets/css/style.css');?>" rel="stylesheet">
-
+	<link href="<?php echo base_url('/assets/css/custom.css');?>" rel="stylesheet">
     <link href="<?php echo base_url('/assets/css/color-03.css');?>" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

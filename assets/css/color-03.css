@@ -148,5 +148,40 @@ ul.static-page-menu li.active a { border-right-color: #575FCF !important; }
     border-color: #b0e1ef
 }
 
+.title {
+	color: #3399ff;
+	text-transform: uppercase;
+	border-bottom: 1px solid #3366ff;
+}
 
+.info {
+	font-size: x-large;
+	font-family: monospace;
+	color: black;
+}
 
+.data {
+	color: white;
+	font-family: monospace;
+	padding-top: 40px;
+	font-size: 18px;
+}
+
+.commenter {
+	color: #3399ff;
+	font-family: monospace;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.review-date {
+	color: white;
+	font-size: 12px; 
+	font-family: monospace;
+}
+
+.review-text {
+	color: white;
+	font-size: 16px;
+	font-family: monospace;
+}
