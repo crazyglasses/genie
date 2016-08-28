@@ -821,7 +821,6 @@ ul.availabily-list li.availabily-content.sold-out > div.date-from:after {
 }
 
 .detail-content {
-    border-bottom: 1px solid #E3E3E3;
     padding-bottom: 40px;
     margin-bottom: 50px;
 }
@@ -1998,7 +1997,7 @@ ul.list-info {
 ul.list-info li {
     line-height: 1;
     position: relative;
-    padding-left: 27px;
+    padding-left: 2px;
 }
 
 ul.list-info li:not(:last-child) {
@@ -2022,12 +2021,13 @@ ul.list-info li .icon {
 
 ul.list-info.no-icon li {
     padding-left: 0;
+    color: white;
+
 }
 
 ul.list-info.bb-dotted li {
-    border-bottom: 1px dotted #E1E1E1;
+    border-bottom: 1px solid #80b3ff;
     padding-bottom: 12px;
-    margin: 0 0 12px;
 }
 
 .hotel-item-wrapper {
@@ -2566,13 +2566,11 @@ ul.breakdown-list.for-avg li:not(:last-child) {
 
 ul.review-list {
     margin-top: 15px;
-    border-top: 1px solid #E3E3E3;
     padding-top: 25px;
 }
 
 ul.review-list > li {
     position: relative;
-    border-bottom: 1px solid #E3E3E3;
     padding-bottom: 25px;
     margin-bottom: 25px;
 }
@@ -2610,8 +2608,8 @@ ul.review-list li .content .review-date {
     text-align: right;
     line-height: 1;
     margin: 0 0 10px;
-    font-size: 11px;
-    color: #999;
+    font-size: 14px;
+    color: white;
 }
 
 ul.review-list li .rating-wrapper {
